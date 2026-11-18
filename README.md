@@ -2,7 +2,8 @@
 
 Single-file HTML briefing deck, served with GitHub Pages.
 
-- Open the deck: `index.html` (Space / arrow keys to advance, N for notes, O for overview, `#6.2` deep links to slide 6 step 2)
+- Open the English deck: `index.html` (Space / arrow keys to advance, N for notes, O for overview, `#6.2` deep links to slide 6 step 2)
+- Open the Hebrew (RTL) executive deck: `he.html` (18 slides tailored for Israeli senior leadership, rebuilt via `cd src && node build_he.js ../he.html`)
 - `Elastic_Search_AI_Dream.pptx`: PowerPoint version of the same story
 - `DEMO_FLOW_DREAM.md`: demo runbook with the verified queries
 
