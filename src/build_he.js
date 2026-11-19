@@ -296,58 +296,115 @@ ${Array.from({ length: 11 }, (_, i) => `#h13[data-step="2"] .i${i + 1},#h13[data
 #h14 .line{position:absolute;left:72px;right:72px;top:554px;font:700 30px/1.2 var(--sans)}
 #h14 .line .sm{display:block;margin-top:7px;font:400 17px var(--sans);color:var(--char)}
 
-/* h15: Multimodal Vector Space */
-.c0{--c:#02BCB7}.c4{--c:#0B64DD}.c6{--c:#F04E98}
-#h15 .plot{position:absolute;left:48px;top:148px;width:680px;height:420px}
-#h15 .plot canvas{display:block}
-#h15 .legend{position:absolute;left:72px;top:580px;display:flex;gap:20px;font:500 14px var(--sans);color:var(--char)}
-#h15 .legend span{display:flex;align-items:center;gap:7px}
-#h15 .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c)}
-#h15 .caps{position:absolute;right:72px;top:156px;width:452px;display:grid;gap:10px}
-#h15 .cap10{display:grid;grid-template-columns:1fr;gap:3px;padding:10px 16px 10px 14px;background:var(--cl,#F5F7FA);border-right:6px solid var(--c,#B5BFCE);border-radius:4px}
-#h15 .cap10 b{font:700 20px/1.2 var(--sans);color:var(--ink)}
-#h15 .cap10 span{font-size:15.5px;color:var(--char);line-height:1.36}
-#h15 .cap10 .q{font:600 15px var(--sans);color:var(--ct)}
-#h15 .vid{position:absolute;right:72px;top:566px;width:452px;font-size:14.5px;color:var(--grey);line-height:1.4}
+/* h15: Agent Builder Platform (CTO view + Kibana Studio UI) */
+#h15 h1{font-size:40px}
+#h15 .kibana-ab{position:absolute;left:72px;top:150px;width:638px;border:1.5px solid var(--dev-blue);background:#fff;box-shadow:7px 7px 0 var(--blue);border-radius:6px;overflow:hidden}
+#h15 .kab-bar{height:28px;background:#101C3F;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font:600 11.5px var(--mono);direction:ltr}
+#h15 .kab-bar .dots{display:flex;align-items:center;gap:6px}
+#h15 .kab-bar .dots i{width:8px;height:8px;border-radius:50%;background:#48EFCF;opacity:.85}
+#h15 .kab-bar .api{background:rgba(72,239,207,.16);color:#48EFCF;border:1px solid rgba(72,239,207,.45);padding:2px 8px;border-radius:3px;font-size:10.5px}
+#h15 .kab-tabs{display:grid;grid-template-columns:1fr 1.15fr;background:#F5F7FA;border-bottom:1.5px solid var(--line);font:600 13px var(--sans)}
+#h15 .kab-tabs div{padding:8px 12px;color:var(--grey);text-align:center;border-left:1px solid var(--line)}
+#h15 .kab-tabs div.on{background:#fff;color:#0B64DD;font-weight:700;box-shadow:inset 0 -3px 0 #0B64DD}
+#h15 .kab-body{display:grid;grid-template-columns:1.08fr .92fr;min-height:330px}
+#h15 .kab-cfg{padding:12px 14px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+#h15 .kab-fld label{display:block;font:700 11px var(--sans);color:var(--grey);margin-bottom:2px}
+#h15 .kab-val{border:1px solid var(--line);background:#F5F7FA;padding:5px 8px;border-radius:4px;font:600 13px var(--sans);color:var(--ink);display:flex;justify-content:space-between;align-items:center}
+#h15 .kab-prompt{border:1px solid #B5BFCE;background:#fff;border-right:3px solid #0B64DD;padding:6px 8px;font-size:12.2px;line-height:1.38;color:var(--char);border-radius:3px}
+#h15 .kab-tools{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+#h15 .kab-tools span{font:600 11px var(--mono);padding:4px 7px;border-radius:3px;border:1px solid var(--dev-blue);background:#fff;color:var(--ink);direction:ltr}
+#h15 .kab-tools span.t-esql{background:#D9E8FF;border-color:#0B64DD;color:#0B64DD}
+#h15 .kab-tools span.t-srch{background:#DDFBF5;border-color:#02BCB7;color:#0A7A76}
+#h15 .kab-tools span.t-mcp{background:#FDE6F1;border-color:#F04E98;color:#BD2A72}
+#h15 .kab-tools span.t-wf{background:#FFF4CC;border-color:#FEC514;color:#8A6500}
+#h15 .kab-sim{padding:12px 13px;background:#FAFBFD;display:flex;flex-direction:column;gap:8px}
+#h15 .kab-u{background:#0B64DD;color:#fff;padding:7px 10px;border-radius:6px 6px 6px 0;font-size:12.5px;line-height:1.35}
+#h15 .kab-tr{border:1px solid var(--line);background:#fff;padding:6px 8px;border-radius:4px;font:500 11px/1.45 var(--mono);color:var(--char);direction:ltr;text-align:left}
+#h15 .kab-tr b{color:#0A7A76}
+#h15 .kab-a{background:#fff;border:1px solid var(--line);border-right:3px solid #48EFCF;padding:7px 10px;border-radius:4px;font-size:12.3px;line-height:1.38;color:var(--ink)}
+#h15 .kab-foot{background:#DDFBF5;border-top:1px solid #02BCB7;padding:6px 12px;font:600 12px var(--sans);color:#0A7A76;display:flex;justify-content:space-between;align-items:center}
+#h15 .ab-pts{position:absolute;right:72px;top:150px;width:466px;display:grid;gap:11px}
+#h15 .ab-pt{border:1.5px solid var(--dev-blue);border-radius:8px;padding:13px 16px;background:#fff}
+#h15 .ab-pt.hl{border-color:#0B64DD;background:#F5F7FA}
+#h15 .ab-pt>b{display:block;font:700 18px/1.2 var(--sans);color:var(--ink);margin-bottom:5px}
+#h15 .ab-pt p{font-size:15px;line-height:1.42;color:var(--char)}
+#h15 .take15{position:absolute;left:72px;right:72px;top:602px;font:700 28px/1.15 var(--sans)}
 
-/* h16: OCR + Mixed RTL/LTR */
+/* h16: Elastic Workflows (Deterministic Execution + YAML + Approval Gate) */
 #h16 h1{font-size:40px}
-#h16 .photo{position:absolute;left:72px;top:154px;width:420px}
-#h16 .photo img{display:block;width:420px;max-height:360px;object-fit:cover;border:1.5px solid var(--dev-blue);box-shadow:8px 8px 0 #B5BFCE}
-#h16 .photo .tag{margin-top:10px;display:block}
-#h16 .pdf-note{margin-top:10px;border:1px solid var(--line);background:#F5F7FA;padding:9px 12px;font-size:14.5px;color:var(--char);border-radius:6px}
-#h16 .eng{position:absolute;right:72px;top:154px;width:676px;display:grid;gap:14px}
-#h16 .eng .cw.loc{box-shadow:6px 6px 0 #B5BFCE}
-#h16 .eng .code{font-size:13.5px;line-height:1.48}
-#h16 .eng .code .ok{color:#0A7A76;font-weight:600}
-#h16 .eng .code .bad{color:#B84A2E}
-#h16 .rtl-ocr{border:1.5px solid var(--dev-blue);border-radius:8px;padding:12px 16px;background:#fff;box-shadow:5px 5px 0 #48EFCF}
-#h16 .rtl-ocr .hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-#h16 .rtl-ocr .good{background:#DDFBF5;padding:7px 12px;font:600 16px var(--sans);color:#0A7A76;border-radius:4px;margin-bottom:6px}
-#h16 .rtl-ocr .garb{font-size:13.5px;color:#B84A2E}
-#h16 .take11{position:absolute;left:72px;right:72px;top:598px;font:700 29px/1.15 var(--sans)}
+#h16 .wf-pipe{position:absolute;left:72px;right:72px;top:148px;display:flex;align-items:stretch;gap:8px}
+#h16 .wf-nd{flex:1;border:1.5px solid var(--dev-blue);border-radius:6px;background:#fff;padding:8px 10px;display:flex;flex-direction:column;gap:3px}
+#h16 .wf-nd i{font:700 11px var(--sans);color:var(--grey);font-style:normal}
+#h16 .wf-nd b{font:700 15px/1.18 var(--sans);color:var(--ink)}
+#h16 .wf-nd span{font-size:12.5px;line-height:1.28;color:var(--char)}
+#h16 .wf-nd.gate{background:#FFF4CC;border-color:#FEC514;box-shadow:4px 4px 0 #FEC514}
+#h16 .wf-nd.gate i{color:#8A6500}
+#h16 .wf-nd.act{background:#D9E8FF;border-color:#0B64DD}
+#h16 .wf-nd.act i{color:#0B64DD}
+#h16 .wf-pipe .arw{align-self:center;width:18px}
+#h16 .wf-yaml{position:absolute;left:72px;top:264px;width:576px}
+#h16 .wf-yaml .code{font-size:12.6px;line-height:1.45;padding:9px 13px}
+#h16 .wf-yaml .code .cm{color:var(--grey)}
+#h16 .wf-yaml .code .gt{background:#FFF4CC;color:#8A6500;font-weight:700;padding:0 4px}
+#h16 .wf-yaml .code .ok{color:#0A7A76;font-weight:600}
+#h16 .wf-pts{position:absolute;right:72px;top:264px;width:528px;display:grid;gap:10px}
+#h16 .wf-pt{border-right:5px solid var(--c,#0B64DD);background:#F5F7FA;padding:10px 15px;border-radius:4px}
+#h16 .wf-pt>b{display:block;font:700 17.5px/1.2 var(--sans);color:var(--ink);margin-bottom:3px}
+#h16 .wf-pt span{font-size:14.6px;line-height:1.38;color:var(--char)}
+#h16 .take16{position:absolute;left:72px;right:72px;top:604px;font:700 28px/1.15 var(--sans)}
 
-/* h17: Air-Gapped */
-#h17 #hero12{left:36px;top:148px;width:540px;height:470px}
-#h17 .tbl{position:absolute;right:72px;top:154px;width:604px}
-#h17 .th,#h17 .trw{display:grid;grid-template-columns:140px 180px 1fr;column-gap:12px;align-items:center}
-#h17 .th{padding-bottom:8px;border-bottom:2px solid var(--ink);font:700 13px var(--sans);color:var(--grey)}
-#h17 .trw{min-height:50px;border-bottom:1px solid var(--line);font-size:16px;line-height:1.3;color:var(--char)}
-#h17 .trw b{color:var(--ink);font-weight:700}
-#h17 .trw .mono{font-size:14px;text-align:right}
-#h17 .line12{position:absolute;right:72px;width:604px;top:498px;font:700 21px/1.32 var(--sans)}
-#h17 .line12 .sm{display:block;margin-top:8px;font:400 15.5px/1.42 var(--sans);color:var(--char)}
+/* h17: Multimodal Vector Space */
+.c0{--c:#02BCB7}.c4{--c:#0B64DD}.c6{--c:#F04E98}
+#h17 .plot{position:absolute;left:48px;top:148px;width:680px;height:420px}
+#h17 .plot canvas{display:block}
+#h17 .legend{position:absolute;left:72px;top:580px;display:flex;gap:20px;font:500 14px var(--sans);color:var(--char)}
+#h17 .legend span{display:flex;align-items:center;gap:7px}
+#h17 .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--c)}
+#h17 .caps{position:absolute;right:72px;top:156px;width:452px;display:grid;gap:10px}
+#h17 .cap10{display:grid;grid-template-columns:1fr;gap:3px;padding:10px 16px 10px 14px;background:var(--cl,#F5F7FA);border-right:6px solid var(--c,#B5BFCE);border-radius:4px}
+#h17 .cap10 b{font:700 20px/1.2 var(--sans);color:var(--ink)}
+#h17 .cap10 span{font-size:15.5px;color:var(--char);line-height:1.36}
+#h17 .cap10 .q{font:600 15px var(--sans);color:var(--ct)}
+#h17 .vid{position:absolute;right:72px;top:566px;width:452px;font-size:14.5px;color:var(--grey);line-height:1.4}
 
-/* h18: Closing Summary */
-#h18 h1{font-size:42px;max-width:1060px;line-height:1.1}
-#h18 .sub{font-size:20px;margin-top:10px;color:var(--char)}
-#h18 #hero13{left:40px;top:234px;width:520px;height:400px}
-#h18 .caps{position:absolute;right:72px;top:244px;width:616px;display:grid;gap:8px}
-#h18 .cap{display:grid;grid-template-columns:132px 1fr;align-items:center;gap:14px;padding:7px 0 7px 14px;background:var(--cl,#F5F7FA);border-right:6px solid var(--c,#B5BFCE);border-radius:4px}
-#h18 .cap.sl{--c:#B5BFCE;--cl:#F5F7FA}
-#h18 .cap .chipf{margin-right:12px;justify-self:start;padding:6px 10px;font-size:12.5px}
-#h18 .cap b{display:block;font:700 20px/1.2 var(--sans);color:var(--ink)}
-#h18 .cap div span{font-size:16px;color:var(--char)}
+/* h18: OCR + Mixed RTL/LTR */
+#h18 h1{font-size:40px}
+#h18 .photo{position:absolute;left:72px;top:154px;width:420px}
+#h18 .photo img{display:block;width:420px;max-height:360px;object-fit:cover;border:1.5px solid var(--dev-blue);box-shadow:8px 8px 0 #B5BFCE}
+#h18 .photo .tag{margin-top:10px;display:block}
+#h18 .pdf-note{margin-top:10px;border:1px solid var(--line);background:#F5F7FA;padding:9px 12px;font-size:14.5px;color:var(--char);border-radius:6px}
+#h18 .eng{position:absolute;right:72px;top:154px;width:676px;display:grid;gap:14px}
+#h18 .eng .cw.loc{box-shadow:6px 6px 0 #B5BFCE}
+#h18 .eng .code{font-size:13.5px;line-height:1.48}
+#h18 .eng .code .ok{color:#0A7A76;font-weight:600}
+#h18 .eng .code .bad{color:#B84A2E}
+#h18 .rtl-ocr{border:1.5px solid var(--dev-blue);border-radius:8px;padding:12px 16px;background:#fff;box-shadow:5px 5px 0 #48EFCF}
+#h18 .rtl-ocr .hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+#h18 .rtl-ocr .good{background:#DDFBF5;padding:7px 12px;font:600 16px var(--sans);color:#0A7A76;border-radius:4px;margin-bottom:6px}
+#h18 .rtl-ocr .garb{font-size:13.5px;color:#B84A2E}
+#h18 .take11{position:absolute;left:72px;right:72px;top:598px;font:700 29px/1.15 var(--sans)}
+
+/* h19: Air-Gapped */
+#h19 #hero12{left:36px;top:148px;width:540px;height:470px}
+#h19 .tbl{position:absolute;right:72px;top:154px;width:604px}
+#h19 .th,#h19 .trw{display:grid;grid-template-columns:140px 180px 1fr;column-gap:12px;align-items:center}
+#h19 .th{padding-bottom:8px;border-bottom:2px solid var(--ink);font:700 13px var(--sans);color:var(--grey)}
+#h19 .trw{min-height:50px;border-bottom:1px solid var(--line);font-size:16px;line-height:1.3;color:var(--char)}
+#h19 .trw b{color:var(--ink);font-weight:700}
+#h19 .trw .mono{font-size:14px;text-align:right}
+#h19 .line12{position:absolute;right:72px;width:604px;top:498px;font:700 21px/1.32 var(--sans)}
+#h19 .line12 .sm{display:block;margin-top:8px;font:400 15.5px/1.42 var(--sans);color:var(--char)}
+
+/* h20: Closing Summary */
+#h20 h1{font-size:42px;max-width:1060px;line-height:1.1}
+#h20 .sub{font-size:20px;margin-top:10px;color:var(--char)}
+#h20 #hero13{left:40px;top:234px;width:520px;height:400px}
+#h20 .caps{position:absolute;right:72px;top:244px;width:616px;display:grid;gap:8px}
+#h20 .cap{display:grid;grid-template-columns:132px 1fr;align-items:center;gap:14px;padding:7px 0 7px 14px;background:var(--cl,#F5F7FA);border-right:6px solid var(--c,#B5BFCE);border-radius:4px}
+#h20 .cap.sl{--c:#B5BFCE;--cl:#F5F7FA}
+#h20 .cap .chipf{margin-right:12px;justify-self:start;padding:6px 10px;font-size:12.5px}
+#h20 .cap b{display:block;font:700 20px/1.2 var(--sans);color:var(--ink)}
+#h20 .cap div span{font-size:16px;color:var(--char)}
 `;
 
 const S = [];
@@ -782,7 +839,7 @@ S.push(slide({ id: 'h13', steps: 3, foot: 'דירוג מחדש · המייל ה�
 // ---------------- 14 RAG, Agent Builder & Workflows ----------------
 S.push(slide({ id: 'h14', steps: 3, foot: 'מחיפוש לפעולה · RAG, Agent Builder ו-Workflows', body: `
   <div class="z">
-    <div class="eyebrow in1">למה חיפוש הוא תשתית ה-AI · <b>RAG, Agent Builder &amp; Workflows</b></div>
+    <div class="eyebrow in1">למה חיפוש הוא תשתית ה-AI · <b>ארכיטקטורת RAG מאובטחת</b></div>
     <h1 class="in2">מודל שפה מכיר רק <span class="b">את מה שהיה באימון שלו.</span></h1>
   </div>
   <div class="world in3">
@@ -803,13 +860,131 @@ S.push(slide({ id: 'h14', steps: 3, foot: 'מחיפוש לפעולה · RAG, Age
     <div class="bridge rv" data-s="2"><b>Elasticsearch</b><span>הגשר לדאטה שלכם</span></div>
   </div>
   <div class="pipe rv" data-s="2">
-    <div class="nd">שאלה בשפה טבעית</div>${ARW}<div class="nd rrfn"><b>שליפה ודירוג מחדש</b></div>${ARW}<div class="nd">הזרקת הקשר לפי הרשאות</div>${ARW}<div class="nd keyn"><b>תשובה מבוססת מקורות + פעולה</b></div>
+    <div class="nd">שאלה בשפה טבעית</div>${ARW}<div class="nd rrfn"><b>שליפה ודירוג מחדש</b></div>${ARW}<div class="nd">הזרקת הקשר לפי הרשאות</div>${ARW}<div class="nd keyn"><b>תשובה מבוססת מקורות</b></div>
   </div>
-  <div class="line rv" data-s="3">החיפוש הוא הדרך שבה ה-LLM <span class="b">פוגש את הארגון שלכם בביטחון.</span><span class="sm">ומעל החיפוש: <b>Agent Builder</b> ו-<b>Elastic Workflows</b> מאפשרים לסוכן לתחקר מספר מערכות, לאחד נתונים ולהוציא לפועל תהליכים מבוקרים.</span></div>`,
-  notes: `<p><b>מקש רווח: חושף את גשר ה-Elasticsearch ואת צינור ה-RAG והסוכנים.</b></p><p>כל ארגון יכול לחבר מודל שפה תוך שעה; האתגר האמיתי הוא לספק למודל בדיוק את הפסקה הנכונה מתוך מיליוני מסמכים תחת הרשאות המשתמש, ואז לאפשר לסוכן לפעול באמצעות Agent Builder ו-Elastic Workflows.</p>` }));
+  <div class="line rv" data-s="3">החיפוש הוא הדרך שבה ה-LLM <span class="b">פוגש את הארגון שלכם בביטחון.</span><span class="sm">אבל תשובה טובה היא רק ההתחלה - השלב הבא הוא סוכנים מומחים (Agents) ותהליכי ביצוע מבוקרים (Workflows).</span></div>`,
+  notes: `<p><b>מקש רווח: חושף את גשר ה-Elasticsearch ואת צינור ה-RAG.</b></p><p>כל ארגון יכול לחבר מודל שפה תוך שעה; האתגר האמיתי הוא לספק למודל בדיוק את הפסקה הנכונה מתוך מיליוני מסמכים תחת הרשאות המשתמש. משם עוברים לשני השקפים הבאים: Agent Builder ו-Elastic Workflows.</p>` }));
 
-// ---------------- 15 Multimodal Vector Space ----------------
-S.push(slide({ id: 'h15', steps: 3, foot: 'מרחב וקטורי אחוד · טקסט, תמונות, קול ווידאו', body: `
+// ---------------- 15 Agent Builder Platform ----------------
+S.push(slide({ id: 'h15', steps: 3, foot: 'Agent Builder · פלטפורמת סוכני AI ארגונית ב-Kibana', body: `
+  <div class="z">
+    <div class="eyebrow in1">פלטפורמת סוכנים מובנית · <b>Elastic Agent Builder</b></div>
+    <h1 class="in2">סוכני <span dir="ltr">Plug &amp; Play</span> או מומחים מותאמים. <span class="b">בלי לבנות תשתית מאפס.</span></h1>
+  </div>
+  <div class="kibana-ab in3">
+    <div class="kab-bar">
+      <span class="dots"><i></i><i></i><i></i><span style="margin-left:6px">Kibana › AI › Agent Builder</span></span>
+      <span class="api">POST /api/agent_builder/converse</span>
+    </div>
+    <div class="kab-tabs">
+      <div>סוכנים מובנים (<span dir="ltr">Search · AI SRE · Security</span>)</div>
+      <div class="on">★ סוכן מומחה מותאם (<span dir="ltr">Custom Expert</span>)</div>
+    </div>
+    <div class="kab-body">
+      <div class="kab-cfg">
+        <div class="kab-fld">
+          <label>תפקיד ופרסונה ייעודית (Role &amp; Persona)</label>
+          <div class="kab-val"><span>מומחה רגולציה ותחקור חוזים</span><span class="mono" style="font-size:11px;color:var(--blue)">compliance-expert</span></div>
+        </div>
+        <div class="kab-fld">
+          <label>מודל שפה (BYO-LLM לכל סוכן)</label>
+          <div class="kab-val"><span dir="ltr" style="font-size:12px">vLLM · Llama-3.3-70B / Claude Sonnet</span><span style="font-size:11px;color:#0A7A76">● מחובר</span></div>
+        </div>
+        <div class="kab-fld">
+          <label>הנחיות מומחה ותחום אחריות (Instructions)</label>
+          <div class="kab-prompt">״אתה מומחה ציות ורכש. הצלב סעיפי חוזים מול מדדי SLA חיים ב-ES|QL, בסס כל ממצא על סעיף מקור מדויק, ואל תחרוג מהאינדקסים המורשים.״</div>
+        </div>
+        <div class="kab-fld">
+          <label>כלים ופרוטוקולים מחוברים (Tools · MCP · A2A)</label>
+          <div class="kab-tools">
+            <span class="t-srch">hybrid_search</span>
+            <span class="t-esql">execute_esql</span>
+            <span class="t-mcp">MCP · Jira / ERP</span>
+            <span class="t-mcp">A2A · finance-agent</span>
+            <span class="t-wf">workflow:sla_review</span>
+          </div>
+        </div>
+      </div>
+      <div class="kab-sim">
+        <div style="font:700 11px var(--sans);color:var(--grey)">בדיקה חיה ושקיפות הרצה (Live Trace)</div>
+        <div class="kab-u">אילו ספקי תשתית חרגו מיעד ה-SLA ברבעון הנוכחי ומה סעיף הקנס בחוזה שלהם?</div>
+        <div class="kab-tr">
+          <b>✓ execute_esql</b> · 21ms · 2 vendors &gt; threshold<br>
+          <b>✓ hybrid_search</b> · 39ms · Contracts_2026 #sec-8.2
+        </div>
+        <div class="kab-a">זוהו <b>2 ספקים</b> בחריגת זמינות מעל 1.8%. לפי <b>סעיף 8.2ב</b> בחוזה האחיד קיימת זכאות לזיכוי רבעוני אוטומטי. להפעיל תהליך בדיקה?</div>
+      </div>
+    </div>
+    <div class="kab-foot">
+      <span>🔒 אכיפת RBAC אוטומטית: הסוכן יורש את הרשאות המשתמש (<span dir="ltr">DLS / FLS</span>)</span>
+      <span class="mono" style="font-size:11px">trace_id: ab-90412</span>
+    </div>
+  </div>
+  <div class="ab-pts in4">
+    <div class="ab-pt hl rv" data-s="1">
+      <b>1 · סוכנים מובנים + מומחים תפורים לתפקיד</b>
+      <p>מתחילים מיד עם סוכני המדף של Elastic, ומקימים תוך דקות <b>סוכנים מומחים ייעודיים</b> (רגולציה, תחקור, מחקר קליני, FinOps) עם הנחיות ואינדקסים מוגדרים.</p>
+    </div>
+    <div class="ab-pt rv" data-s="2">
+      <b>2 · כלים דטרמיניסטיים ופרוטוקולים פתוחים</b>
+      <p>הסוכן מריץ חיפוש היברידי ושאילתות <span class="mono">ES|QL</span> מדויקות, מתחבר למערכות הארגון ב-<b dir="ltr">MCP</b>, ומאציל משימות לסוכנים אחרים ב-<b dir="ltr">A2A</b>.</p>
+    </div>
+    <div class="ab-pt rv" data-s="3">
+      <b>3 · חוסך לצוותי הפיתוח חודשים של צנרת DIY</b>
+      <p>בלי לבנות ולתחזק תשתית <span dir="ltr">LangChain</span> נפרדת לכל פרויקט: ניהול הרשאות, זיכרון שיחה, לוגי ביקורת ו-API אחיד לאפליקציות שלכם כבר בפנים.</p>
+    </div>
+  </div>
+  <div class="take15 rv" data-s="3">מגדירים סוכן מומחה ב-Kibana בדקות. <span class="b">וחושפים אותו לכל מערכת ארגונית ב-API מאובטח אחד.</span></div>`,
+  notes: `<p><b>מקש רווח: שלוש לחיצות - מציג CTO את הערך ההנדסי של Agent Builder כפלטפורמה אחודה.</b></p><p>במקום שכל צוות פיתוח ימציא מחדש ניהול פרומפטים, הרשאות משתמש, חיבור לכלים ולוגי ביקורת בקוד פיתון נפרד, Agent Builder ב-Kibana נותן גם סוכני Plug & Play מוכנים וגם סטודיו להקמת סוכנים מומחים לכל תפקיד בארגון - עם תמיכה מובנית ב-ES|QL,‏ MCP ו-A2A.</p>` }));
+
+// ---------------- 16 Elastic Workflows ----------------
+S.push(slide({ id: 'h16', steps: 3, foot: 'Elastic Workflows · אוטומציה דטרמיניסטית ושערי אישור', body: `
+  <div class="z">
+    <div class="eyebrow in1">אורקסטרציה ובקרה הנדסית · <b>Elastic Workflows</b></div>
+    <h1 class="in2">הסוכן מנתח בהסתברות. <span class="b">ה-Workflow מבצע בדטרמיניזם.</span></h1>
+  </div>
+  <div class="wf-pipe in3">
+    <div class="wf-nd"><i>1 · טריגר</i><b>אירוע, תזמון או סוכן</b><span>חוק התראה, Cron,‏ API או קריאת כלי מסוכן</span></div>${ARW}
+    <div class="wf-nd"><i>2 · איסוף ראיות</i><b>שליפה מרובת מקורות</b><span>שאילתות ES|QL וחיפוש היברידי מתועד</span></div>${ARW}
+    <div class="wf-nd"><i>3 · שיקול דעת</i><b>צעד AI ממוקד</b><span>סוכן שמנתח את הראיות ומנסח המלצה</span></div>${ARW}
+    <div class="wf-nd gate"><i>4 · שער בקרה</i><b><span dir="ltr">waitForApproval</span></b><span>עצירה קשיחה לאישור אנושי לפני שינוי</span></div>${ARW}
+    <div class="wf-nd act"><i>5 · ביצוע מבוקר</i><b>רץ תחת זהות המאשר</b><span>Jira,‏ ServiceNow,‏ Slack,‏ ERP או אינדוקס</span></div>${ARW}
+    <div class="wf-nd"><i>6 · ביקורת</i><b>Audit Trail מלא</b><span>מי המליץ, מי אישר ומה בוצע בפועל</span></div>
+  </div>
+  <div class="wf-yaml in4">
+    <div class="cw"><div class="bar"><i></i><i></i><i></i><span>Kibana › Workflows · sla_remediation_runbook.yaml</span></div>
+<pre class="code"><span class="k">triggers:</span>
+  - type: <span class="ok">agent_tool</span>          <span class="cm"># Agent Builder, alert, or cron</span>
+<span class="k">steps:</span>
+  - name: gather_evidence
+    type: elasticsearch.esql  <span class="cm"># deterministic data fetch</span>
+  - name: assess_impact
+    type: ai.agent            <span class="cm"># bounded reasoning step</span>
+  - name: executive_gate
+    type: <span class="gt">waitForApproval</span>     <span class="cm"># hard pause for human sign-off</span>
+    expires_after: 24h
+  - name: update_enterprise_sys
+    type: http.connector      <span class="cm"># Jira / ERP · runs as approver</span></pre></div>
+  </div>
+  <div class="wf-pts in4">
+    <div class="wf-pt rv" data-s="1" style="--c:#0B64DD">
+      <b>הפרדה ארכיטקטונית בין חשיבה לביצוע</b>
+      <span>מודל שפה מצוין בהבנת הקשר אך אסור לתת לו גישה חופשית לשינוי פרודקשן. ה-Workflow עוטף כל פעולה בלוגיקה קשיחה, <span dir="ltr">retries</span> וטיפול בשגיאות.</span>
+    </div>
+    <div class="wf-pt rv" data-s="2" style="--c:#FEC514">
+      <b>בקרה אנושית בקוד המנוע - לא כ״בקשה בפרומפט״</b>
+      <span>צעד <span class="mono">waitForApproval</span> עוצר פיזית את הריצה עד לאישור גורם מוסמך, והפעולה מתבצעת תחת <b>הרשאת וזהות המאשר</b>.</span>
+    </div>
+    <div class="wf-pt rv" data-s="3" style="--c:#48EFCF">
+      <b>Runbooks כקוד YAML בתוך הפלטפורמה</b>
+      <span>קריא, מנוהל בגרסאות (<span dir="ltr">GitOps / PR</span>) ורץ ישירות ב-Kibana - חוסך רכישה, אינטגרציה ותחזוקה של כלי SOAR ואוטומציה חיצוניים.</span>
+    </div>
+  </div>
+  <div class="take16 rv" data-s="3">אפס ״סוכנים סוררים״ בפרודקשן: <span class="b">הגמישות של AI עם המשמעת ההנדסית של קוד.</span></div>`,
+  notes: `<p><b>מקש רווח: שלוש לחיצות על שלושת עקרונות הבקרה ההנדסית ל-CTO ול-CISO.</b></p><p>החשש מספר 1 של כל CTO מהטמעת סוכני AI הוא פעולות לא צפויות בפרודקשן. השילוב בין Agent Builder ל-Elastic Workflows פותר זאת מהשורש: הסוכן חוקר וממליץ, וה-Workflow מבצע בצורה דטרמיניסטית לחלוטין עם שערי אישור מובנים ותיעוד מלא.</p>` }));
+
+// ---------------- 17 Multimodal Vector Space ----------------
+S.push(slide({ id: 'h17', steps: 3, foot: 'מרחב וקטורי אחוד · טקסט, תמונות, קול ווידאו', body: `
   <div class="z">
     <div class="eyebrow in1">מולטי-מודאליות מובנית · <b>jina-embeddings-v5-omni</b></div>
     <h1 class="in2">מרחב חיפוש אחד <span class="b">לטקסט, תמונות, שמע ווידאו.</span></h1>
@@ -862,8 +1037,8 @@ S.push(slide({ id: 'h15', steps: 3, foot: 'מרחב וקטורי אחוד · ט�
     };`,
   notes: `<p><b>מקש רווח: שלוש לחיצות - כל לחיצה מדליקה קשר חוצה-מדיה בענן הווקטורים התלת-ממדי.</b></p><p>ידע ארגוני לא חי רק בקובצי טקסט נקיים: הוא נמצא בתרשימי זרימה, צילומי מסך, הקלטות מוקד וסריקות. מודל מולטי-מודאלי ממפה את כולם לאותו מרחב וקטורי ב-Elasticsearch.</p>` }));
 
-// ---------------- 16 OCR & Mixed RTL/LTR ----------------
-S.push(slide({ id: 'h16', steps: 3, foot: 'OCR וחילוץ מסמכים · עברית ואנגלית מעורבת, ענן ונתק מלא', body: `
+// ---------------- 18 OCR & Mixed RTL/LTR ----------------
+S.push(slide({ id: 'h18', steps: 3, foot: 'OCR וחילוץ מסמכים · עברית ואנגלית מעורבת, ענן ונתק מלא', body: `
   <div class="z">
     <div class="eyebrow in1">חילוץ מסמכים מהעולם האמיתי · <b>jina-ocr-v1 מול מנוע מקומי</b></div>
     <h1 class="in2">צילום מהנייד וטפסים סרוקים <span class="b">הופכים מיד לדאטה בר-חיפוש.</span></h1>
@@ -890,8 +1065,8 @@ Total due <span class="ok">$344,400.00</span></pre></div>
   <div class="take11 rv" data-s="3">מודל ענן לדיוק מקסימלי בעברית משולבת אנגלית, <span class="b">ומנוע מקומי בנתק מלא במתג אחד.</span></div>`,
   notes: `<p><b>מקש רווח: מדגים דיוק על צילום עקום מהנייד, טיפול בטפסים דו-כיווניים בעברית+אנגלית, ומעבר חלק למנוע מקומי בנתק מלא.</b></p>` }));
 
-// ---------------- 17 Air-Gapped ----------------
-S.push(slide({ id: 'h17', steps: 3, foot: 'נתק מלא ועצמאות ארכיטקטונית · Air-Gapped', body: `
+// ---------------- 19 Air-Gapped ----------------
+S.push(slide({ id: 'h19', steps: 3, foot: 'נתק מלא ועצמאות ארכיטקטונית · Air-Gapped', body: `
   <div class="z">
     <div class="eyebrow in1">ריבונות ועצמאות · <b>ענן היברידי ונתק מלא (Air-Gapped)</b></div>
     <h1 class="in2">רץ בדיוק באותו אופן <span class="b">גם ברשת סגורה לחלוטין.</span></h1>
@@ -922,8 +1097,8 @@ S.push(slide({ id: 'h17', steps: 3, foot: 'נתק מלא ועצמאות ארכי
     sc.run();`,
   notes: `<p><b>מקש רווח: שורת ההפשטה הארכיטקטונית ואז עצמאות הספק (ללא תלות בשרשרת תוספים חיצוניים).</b></p><p>קריטי למגזר הביטחוני, הממשלתי, הפיננסי והבריאותי בישראל: אפשר לפתח בענן או בסביבת פיתוח ולהעביר לרשת סגורה לחלוטין (Air-Gapped) בלי לשנות שורת קוד אחת באפליקציה.</p>` }));
 
-// ---------------- 18 Closing Summary ----------------
-S.push(slide({ id: 'h18', steps: 1, foot: 'Elastic · פלטפורמת Search AI אחת להכול', body: `
+// ---------------- 20 Closing Summary ----------------
+S.push(slide({ id: 'h20', steps: 1, foot: 'Elastic · פלטפורמת Search AI אחת להכול', body: `
   <div class="z">
     <div class="eyebrow in1">השורה התחתונה · <b>עוצמת ה-Search AI של Elastic</b></div>
     <h1 class="in2">מנוע החיפוש <span dir="ltr">#1</span> בעולם.<br><span class="b">ומסד הנתונים הווקטורי <span dir="ltr">#1</span> בעולם.</span></h1>
